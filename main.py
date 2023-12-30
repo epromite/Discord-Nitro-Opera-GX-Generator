@@ -30,7 +30,7 @@ def send_post_request():
 
 def write_to_file(token_value):
     with open("codes.txt", "a") as file:
-        file.write(f"https://discord.com/billing/partner-promotions/1180231712274387115/{token_value}\n")
+        file.write(f"https://discord.com/billing/partner-promotions/1180231712274387115/{token_value}\n\n")
 
 def generate_code(current, num_requests):
     response_json = send_post_request()
